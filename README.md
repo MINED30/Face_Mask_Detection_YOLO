@@ -1,10 +1,5 @@
 <a href="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/ReadMeKR.md" target="_parent\">[한글 설명]</a>
-# Face Mask Detection with YOLO :mask:![image](https://user-images.githubusercontent.com/73981982/116196276-402f1280-a76e-11eb-9e41-0ad26063189c.png)
-
-<br><a href="https://colab.research.google.com/github/MINED30/Face_Mask_Detection_YOLO/blob/main/yololomask.ipynb" target="_parent\"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>  
-
-
-[![Alt text]()](https://www.youtube.com/watch?v=tsKZR74DWCM)
+# Face Mask Detection with YOLO :mask:<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a><a href="https://colab.research.google.com/github/MINED30/Face_Mask_Detection_YOLO/blob/main/yololomask.ipynb" target="_parent\">![image](https://user-images.githubusercontent.com/73981982/116196276-402f1280-a76e-11eb-9e41-0ad26063189c.png)
 
 ### *Feature*         
 
@@ -15,6 +10,9 @@
 :thumbsup: High accuracy (mAP@0.50 = 94.04 %)
 
 :three: Detecting in 3 classes
+
+:tv:  [Video on Youtube](https://www.youtube.com/watch?v=tsKZR74DWCM)
+
 
 YOLO(You only look once) is one of the fastest object detection algorithms. Although it is no longer the most accurate object detection algorithm, it is recommended that you choose when real-time detection is needed without losing too much accuracy. In this repository, we will try YOLO v3 & v4 and detect facial mask.
 
