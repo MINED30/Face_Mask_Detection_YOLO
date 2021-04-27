@@ -1,11 +1,14 @@
-# Face Mask Detection with YOLO<br><a href="https://colab.research.google.com/github/MINED30/Face_Mask_Detection_YOLO/blob/main/yololomask.ipynb" target="_parent\"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+# Face Mask Detection with YOLO :mask:<br><a href="https://colab.research.google.com/github/MINED30/Face_Mask_Detection_YOLO/blob/main/yololomask.ipynb" target="_parent\"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ### *Feature*         
 
-- Easily try YOLO v3 (v4 as well) 
-- Powered by google colab 
-- High accuracy (mAP@0.50 = 94.04 %)
-- Detecting in 3 classes
+:rocket: Easily try YOLO v3 (v4 as well) 
+
+:zap: Powered by google colab 
+
+:thumbsup: High accuracy (mAP@0.50 = 94.04 %)
+
+:three: Detecting in 3 classes
 
 You only look once, or YOLO, is one of the faster object detection algorithms out there. Though it is no longer the most accurate object detection algorithm, it is a very good choice when you need real-time detection, without loss of too much accuracy. 
 
