@@ -26,6 +26,7 @@ The dataset for this pretrained network is provided by [VictorLin000](https://gi
 You can download the dataset directly from [google drive](https://drive.google.com/drive/folders/1aAXDTl5kMPKAHE08WKGP2PifIdc21-ZG).
 
 ## Model structure
+### Darknet-53
 <img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/model.png?raw=true">
 
 Darknet-53 network uses successive 3 × 3 and 1 × 1 convolutional layers but now has some shortcut connections as well and is significantly larger. It has 53 convolutional layers.
@@ -33,6 +34,7 @@ YOLO v2 originally used a custom deep architecture darknet-19 which has 19 layer
 However, the architecture of YOLO v2 still lacked the most important elements required by detecting small object. YOLO v3 puts it all together.
 First, YOLO v3 uses a variant of Darknet with 53 layer networks trained on "Imagnet".
 
+### Why 106 layers?
 ![image](https://user-images.githubusercontent.com/73981982/116249944-42ae5e00-a7a8-11eb-8d60-8ad7b07b434f.png)
  For detection tasks, 53 more layers are stacked, so YOLO v3 has a 106 layer fully convolution. That's why YOLO v3 is slower than YOLO v2. You can see this architecture of YOLO v3 in colab.
  
