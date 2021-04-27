@@ -17,7 +17,7 @@ You can download the dataset directly from [google drive](https://drive.google.c
 darknet-53
 
 ## Demo
-![image](https://user-images.githubusercontent.com/73981982/116174389-478ff500-a749-11eb-8315-7b40014fd230.png)
+<img src="https://raw.githubusercontent.com/MINED30/Face_Mask_Detection_YOLO/main/demo/woman-5772089_1280.jpg" width="60%">
 
 
 
