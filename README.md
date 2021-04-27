@@ -1,6 +1,6 @@
 # Face Mask Detection with YOLO
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+<a href="https://colab.research.google.com/github/MINED30/Face_Mask_Detection_YOLO/blob/main/yololomask.ipynb" target="_parent\"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 - Easily try YOLO v3 (v4 as well) 
 - Powered by google colab
 - High accuracy (mAP@0.50 = 94.04 %)
@@ -41,15 +41,15 @@ First, YOLO v3 uses a variant of Darknet, which originally has 53 layer network 
 <img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/ezgif-3-6e175c3b97a8.gif?raw=true" width="60%">
 <img src="https://raw.githubusercontent.com/MINED30/Face_Mask_Detection_YOLO/main/demo/predictions%20(1).jpg" width="60%">
 
-## Performance
-### one
+## Evaluation
+### Average Precision
 | class_id | name       | TP  | FP | ap     |
 |----------|------------|-----|----|--------|
 | 0        | mask       | 333 | 34 | 96.96% |
 | 1        | improperly | 12  | 6  | 92.80% |
 | 2        | no mask    | 62  | 13 | 92.37% |
 
-### two
+### F1-score & Average IoU
 | conf_thresh | precision | recall | F1-score | TP  | FP | FN | average IoU |
 |-------------|-----------|--------|----------|-----|----|----|-------------|
 | **0.25**        |    0.88   |  0.95  |   0.92   | 407 | 53 | 21 |   69.55 %   |
