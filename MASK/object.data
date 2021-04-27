@@ -1,0 +1,5 @@
+classes = 3
+train  = /content/YOLOv3_mask_detect/dataset/train.txt
+valid  = /content/YOLOv3_mask_detect/dataset/val.txt
+names = /content/YOLOv3_mask_detect/Mask/object.names
+backup = /content/darknet/backup/
