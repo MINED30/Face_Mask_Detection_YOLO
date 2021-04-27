@@ -1,10 +1,15 @@
 # Face Mask Detection with YOLO
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
-- Easily use YOLO v3 with google colab
-- Hello
-- World✨
-- 
+- Easily try YOLO v3 (v4 as well) 
+- Powered by google colab
+- High accuracy (mAP@0.50 = 94.04 %)
+- Detecting in 3 classes
+
+You only look once, or YOLO, is one of the faster object detection algorithms out there. Though it is no longer the most accurate object detection algorithm, it is a very good choice when you need real-time detection, without loss of too much accuracy. 
+
+A few weeks back, the third version of YOLO came out, and this post aims at explaining the changes introduced in YOLO v3. This is not going to be a post explaining what YOLO is from the ground up. I assume you know how YOLO v2 works. If that is not the case, I recommend you to check out the following papers by Joseph Redmon et all, to get a hang of how YOLO works.
+
 ## Dataset
 The dataset for this pre-trained network is provided by [VictorLin000](https://github.com/VictorLin000/YOLOv3_mask_detect) and contains 678 images of people with and without masks. In total there are 3 different classes annotated:
 
@@ -13,6 +18,7 @@ The dataset for this pre-trained network is provided by [VictorLin000](https://g
 * `mask` - Mask coveres the essential parts.
 
 You can download the dataset directly from [google drive](https://drive.google.com/drive/folders/1aAXDTl5kMPKAHE08WKGP2PifIdc21-ZG).
+
 ## Model structure
 <img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/model.png?raw=true">
 
@@ -23,6 +29,11 @@ network stuff. Our network uses successive 3 × 3 and 1 × 1
 convolutional layers but now has some shortcut connections
 as well and is significantly larger. It has 53 convolutional
 layers so we call it Darknet-53!
+
+Darknet-53
+YOLO v2 used a custom deep architecture darknet-19, an originally 19-layer network supplemented with 11 more layers for object detection. With a 30-layer architecture, YOLO v2 often struggled with small object detections. This was attributed to loss of fine-grained features as the layers downsampled the input. To remedy this, YOLO v2 used an identity mapping, concatenating feature maps from from a previous layer to capture low level features.
+However, YOLO v2’s architecture was still lacking some of the most important elements that are now staple in most of state-of-the art algorithms. No residual blocks, no skip connections and no upsampling. YOLO v3 incorporates all of these.
+First, YOLO v3 uses a variant of Darknet, which originally has 53 layer network trained on Imagenet. For the task of detection, 53 more layers are stacked onto it, giving us a 106 layer fully convolutional underlying architecture for YOLO v3. This is the reason behind the slowness of YOLO v3 compared to YOLO v2. Here is how the architecture of YOLO now looks like.
 
 ## Demo
 <img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/ezgif-2-6ce114bf9fed.gif?raw=true" width="60%">
@@ -78,6 +89,7 @@ for this data
 - https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY8sZMr_zbr_fH-0Fg
 - https://medium.com/@artinte7
 - https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/
+- https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/
 
 ## Source from
 - https://pixabay.com/
