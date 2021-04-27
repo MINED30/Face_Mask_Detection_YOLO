@@ -15,7 +15,14 @@ The dataset for this pre-trained network is provided by [VictorLin000](https://g
 You can download the dataset directly from [google drive](https://drive.google.com/drive/folders/1aAXDTl5kMPKAHE08WKGP2PifIdc21-ZG).
 ## Model structure
 <img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/model.png?raw=true">
-darknet-53
+
+We use a new network for performing feature extraction.
+Our new network is a hybrid approach between the network
+used in YOLOv2, Darknet-19, and that newfangled residual
+network stuff. Our network uses successive 3 × 3 and 1 × 1
+convolutional layers but now has some shortcut connections
+as well and is significantly larger. It has 53 convolutional
+layers so we call it Darknet-53!
 
 ## Demo
 <img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/predictions%20(2).jpg?raw=true" width="60%">
