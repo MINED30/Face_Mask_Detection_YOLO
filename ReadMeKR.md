@@ -17,7 +17,7 @@ YOLO(You look only one)는 객체 감지 알고리즘 중 매우 빠른 알고�
 
 * `no mask` - 마스크를 쓰지 않은 사람
 * `improperly` - 일부만 착용한 사람
-* `mask` - Mask covers the essential parts.
+* `mask` - 마스크를 잘 착용한 사람
 
 데이터셋은 구글드라이브에서 직접 받을 수 있습니다. [google drive](https://drive.google.com/drive/folders/1aAXDTl5kMPKAHE08WKGP2PifIdc21-ZG).
 
