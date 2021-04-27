@@ -62,17 +62,17 @@ mean average precision (mAP@0.50) = 94.04 % 
 
 ### Train
 ```
-!./darknet detector train /content/YOLOv3_mask_detect/Mask/object.data\
-                          /content/YOLOv3_mask_detect/Mask/detect_mask.cfg\
+!./darknet detector train /content/Face_Mask_Detection_YOLO/Mask/object.data\
+                          /content/Face_Mask_Detection_YOLO/Mask/detect_mask.cfg\
                           darknet53.conv.74\
                           -dont_show -map 
 ```
 ### Detect
 ```
-!./darknet detector test /content/YOLOv3_mask_detect/Mask/object.data\
-                         /content/YOLOv3_mask_detect/Mask/detect_mask.cfg\
+!./darknet detector test /content/Face_Mask_Detection_YOLO/Mask/object.data\
+                         /content/Face_Mask_Detection_YOLO/Mask/detect_mask.cfg\
                          /content/backup/detect_mask_last.weights\
-                         /content/gdrive/MyDrive/mask_demo/man_0_1.png
+                         /content/Face_Mask_Detection_YOLO/demo/man_0_1.png
 ```
 
 ## Reference
