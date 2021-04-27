@@ -10,34 +10,25 @@
 
 :three: Detecting in 3 classes
 
-YOLO(You only look once) is one of the fastest object detection algorithms. Although it is no longer the most accurate object detection algorithm, it is recommended that you choose when real-time detection is needed without losing too much accuracy.
-
-In this repository, we will try YOLO v3 & v4 and detect facial mask.
+YOLO(You only look once) is one of the fastest object detection algorithms. Although it is no longer the most accurate object detection algorithm, it is recommended that you choose when real-time detection is needed without losing too much accuracy. In this repository, we will try YOLO v3 & v4 and detect facial mask.
 
 ## Dataset
-The dataset for this pre-trained network is provided by [VictorLin000](https://github.com/VictorLin000/YOLOv3_mask_detect) and contains 678 images of people with and without masks. In total there are 3 different classes annotated:
+The dataset for this pretrained network is provided by [VictorLin000](https://github.com/VictorLin000/YOLOv3_mask_detect) and contains 678 images of people with and without masks. There are 3 different classes annotated:
 
 * `no mask` - No mask at all.
-* `improperly` - Partial covered face.
-* `mask` - Mask coveres the essential parts.
+* `improperly` - Partially covered face.
+* `mask` - Mask covers the essential parts.
 
 You can download the dataset directly from [google drive](https://drive.google.com/drive/folders/1aAXDTl5kMPKAHE08WKGP2PifIdc21-ZG).
 
 ## Model structure
 <img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/model.png?raw=true">
 
-We use a new network for performing feature extraction.
-Our new network is a hybrid approach between the network
-used in YOLOv2, Darknet-19, and that newfangled residual
-network stuff. Our network uses successive 3 × 3 and 1 × 1
-convolutional layers but now has some shortcut connections
-as well and is significantly larger. It has 53 convolutional
-layers so we call it Darknet-53!
+Darknet-53 network uses successive 3 × 3 and 1 × 1 convolutional layers but now has some shortcut connections as well and is significantly larger. It has 53 convolutional layers.
+YOLO v2 originally used a custom deep architecture darknet-19 which has 19 layers with 11 additional layers for object detection. YOLO v2 often suffers from small object detection. This is because the layers downsampled the input. To solve this problem, YOLO v2 used an identity mapping to link the feature maps of the previous layer to capture lower-level features (which is able to reflect small object feature).
+However, the architecture of YOLO v2 still lacked the most important elements required by detecting small object. YOLO v3 puts it all together.
+First, YOLO v3 uses a variant of Darknet with 53 layer networks trained on "Imagnet". For detection tasks, 53 more layers are stacked, so YOLO v3 has a 106 layer fully convolution. That's why YOLO v3 is slower than YOLO v2. 
 
-Darknet-53
-YOLO v2 used a custom deep architecture darknet-19, an originally 19-layer network supplemented with 11 more layers for object detection. With a 30-layer architecture, YOLO v2 often struggled with small object detections. This was attributed to loss of fine-grained features as the layers downsampled the input. To remedy this, YOLO v2 used an identity mapping, concatenating feature maps from from a previous layer to capture low level features.
-However, YOLO v2’s architecture was still lacking some of the most important elements that are now staple in most of state-of-the art algorithms. No residual blocks, no skip connections and no upsampling. YOLO v3 incorporates all of these.
-First, YOLO v3 uses a variant of Darknet, which originally has 53 layer network trained on Imagenet. For the task of detection, 53 more layers are stacked onto it, giving us a 106 layer fully convolutional underlying architecture for YOLO v3. This is the reason behind the slowness of YOLO v3 compared to YOLO v2. Here is how the architecture of YOLO now looks like.
 
 ## Demo
 <img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/ezgif-2-6ce114bf9fed.gif?raw=true" width="60%">
