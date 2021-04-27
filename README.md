@@ -14,9 +14,6 @@ The dataset for this pre-trained network is provided by [VictorLin000](https://g
 
 You can download the dataset directly from [google drive](https://drive.google.com/drive/folders/1aAXDTl5kMPKAHE08WKGP2PifIdc21-ZG).
 ## Model structure
-![image](https://user-images.githubusercontent.com/73981982/116172600-021df880-a746-11eb-8a8d-30cf7c752a96.png)
-![image](https://user-images.githubusercontent.com/73981982/116174319-2202eb80-a749-11eb-97db-e146578179be.png)
-
 darknet-53
 
 ## Demo
