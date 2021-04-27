@@ -31,13 +31,6 @@ layers so we call it Darknet-53!
 
 
 ## Performance
-class_id = 0, name = mask, ap = 96.96%     (TP = 333, FP = 34) 
-class_id = 1, name = improperly, ap = 92.80%     (TP = 12, FP = 6) 
-class_id = 2, name = no mask, ap = 92.37%      (TP = 62, FP = 13) 
-for conf_thresh = 0.25, precision = 0.88, recall = 0.95, F1-score = 0.92 
-for conf_thresh = 0.25, TP = 407, FP = 53, FN = 21, average IoU = 69.55 % 
-mean average precision (mAP@0.50) = 0.940448, or 94.04 % 
-
 ### one
 | class_id | name       | TP  | FP | ap     |
 |----------|------------|-----|----|--------|
