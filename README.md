@@ -1,8 +1,8 @@
 # Face Mask Detection with YOLO
 
-<a href="https://colab.research.google.com/github/MINED30/Face_Mask_Detection_YOLO/blob/main/yololomask.ipynb" target="_parent\"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+
 - Easily try YOLO v3 (v4 as well) 
-- Powered by google colab
+- Powered by google colab <a href="https://colab.research.google.com/github/MINED30/Face_Mask_Detection_YOLO/blob/main/yololomask.ipynb" target="_parent\"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 - High accuracy (mAP@0.50 = 94.04 %)
 - Detecting in 3 classes
 
