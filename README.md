@@ -36,7 +36,7 @@ First, YOLO v3 uses a variant of Darknet with 53 layer networks trained on "Imag
 
 ### Why 106 layers?
 ![image](https://user-images.githubusercontent.com/73981982/116249944-42ae5e00-a7a8-11eb-8d60-8ad7b07b434f.png)
- For detection tasks, 53 more layers are stacked, so YOLO v3 has a 106 layer fully convolution. That's why YOLO v3 is slower than YOLO v2. You can see this architecture of YOLO v3 in colab.
+ For detection tasks, 53 more layers are stacked, so YOLO v3 has a 106 layer fully convolution. That's why YOLO v3 is slower than YOLO v2. You can see this architecture of YOLO v3 in colab. ( If you want more information about YOLO v3 & image detection, check powerpoint file in this repo)
  
 ```
 !./darknet detector map /content/Face_Mask_Detection_YOLO/MASK/object.data\
