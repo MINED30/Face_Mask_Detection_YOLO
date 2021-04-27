@@ -25,7 +25,9 @@ as well and is significantly larger. It has 53 convolutional
 layers so we call it Darknet-53!
 
 ## Demo
+<img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/ezgif-2-6ce114bf9fed.gif?raw=true" width="60%">
 <img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/predictions%20(2).jpg?raw=true" width="60%">
+<img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/ezgif-3-6e175c3b97a8.gif?raw=true" width="60%">
 <img src="https://raw.githubusercontent.com/MINED30/Face_Mask_Detection_YOLO/main/demo/predictions%20(1).jpg" width="60%">
 
 
