@@ -4,7 +4,7 @@
 - Easily use YOLO v3 with google colab
 - Hello
 - World✨
-
+- 
 ## Dataset
 The dataset for this pre-trained network is provided by [VictorLin000](https://github.com/VictorLin000/YOLOv3_mask_detect) and contains 678 images of people with and without masks. In total there are 3 different classes annotated:
 
@@ -30,8 +30,6 @@ layers so we call it Darknet-53!
 <img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/ezgif-3-6e175c3b97a8.gif?raw=true" width="60%">
 <img src="https://raw.githubusercontent.com/MINED30/Face_Mask_Detection_YOLO/main/demo/predictions%20(1).jpg" width="60%">
 
-
-
 ## Performance
 ### one
 | class_id | name       | TP  | FP | ap     |
@@ -48,14 +46,40 @@ layers so we call it Darknet-53!
 ### Mean Average Precision
 mean average precision (mAP@0.50) = 94.04 % 
 
-## Reference
-https://arxiv.org/abs/1804.02767
+## Usage
+### Load weight
+```
+!wget https://pjreddie.com/media/files/darknet53.conv.74
+```
 
-https://towardsdatascience.com/yolo-v3-object-detection-53fb7d3bfe6b
+or you can get pretrained [weights](https://drive.google.com/drive/folders/16MsdDvPuF6CxFd0vW2VYya6e5cqZJjZI?usp=sharing)
+for this data
+### Train
+```
+!./darknet detector train /content/YOLOv3_mask_detect/Mask/object.data\
+                          /content/YOLOv3_mask_detect/Mask/detect_mask.cfg\
+                          darknet53.conv.74\
+                          -dont_show -map 
+```
+### Detect
+```
+!./darknet detector test /content/YOLOv3_mask_detect/Mask/object.data\
+                         /content/YOLOv3_mask_detect/Mask/detect_mask.cfg\
+                         /content/backup/detect_mask_last.weights\
+                         /content/gdrive/MyDrive/mask_demo/man_0_1.png
+```
+
+## Reference
+- https://arxiv.org/abs/1804.02767
+- https://towardsdatascience.com/yolo-v3-object-detection-53fb7d3bfe6b
+- https://github.com/AlexeyAB/darknet
+- https://github.com/VictorLin000/YOLOv3_mask_detect
+- https://pjreddie.com/darknet/yolo/
+- https://colab.research.google.com/drive/1_GdoqCJWXsChrOiY8sZMr_zbr_fH-0Fg
+- https://medium.com/@artinte7
+- https://machinelearningmastery.com/how-to-perform-object-detection-with-yolov3-in-keras/
 
 ## Source from
-https://pixabay.com/
-
-https://www.miricanvas.com/
-
-https://www.videvo.net/
+- https://pixabay.com/
+- https://www.miricanvas.com/
+- https://www.videvo.net/
