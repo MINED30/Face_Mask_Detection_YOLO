@@ -57,8 +57,9 @@ mean average precision (mAP@0.50) = 94.04 % 
 !wget https://pjreddie.com/media/files/darknet53.conv.74
 ```
 
-or you can get pretrained [weights](https://drive.google.com/drive/folders/16MsdDvPuF6CxFd0vW2VYya6e5cqZJjZI?usp=sharing)
-for this data
+이 데이터셋으로 훈련된[weights](https://drive.google.com/drive/folders/16MsdDvPuF6CxFd0vW2VYya6e5cqZJjZI?usp=sharing)를
+다운로드해서 사용할 수 있습니다.
+
 ### Train
 ```
 !./darknet detector train /content/YOLOv3_mask_detect/Mask/object.data\
