@@ -1,5 +1,5 @@
 <a href="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/ReadMeKR.md" target="_parent\">[한글 설명]</a>
-# Face Mask Detection with YOLO :mask:<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a><a href="https://colab.research.google.com/github/MINED30/Face_Mask_Detection_YOLO/blob/main/yololomask.ipynb" target="_parent\">![image](https://user-images.githubusercontent.com/73981982/116196276-402f1280-a76e-11eb-9e41-0ad26063189c.png)
+# Face Mask Detection with YOLO 　　　　　　　　<img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a><a href="https://colab.research.google.com/github/MINED30/Face_Mask_Detection_YOLO/blob/main/yololomask.ipynb" target="_parent\">![image](https://user-images.githubusercontent.com/73981982/116196276-402f1280-a76e-11eb-9e41-0ad26063189c.png)
 
 ### *Feature*         
 
