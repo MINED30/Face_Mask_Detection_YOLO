@@ -73,7 +73,7 @@ for this data
 !./darknet detector test /content/Face_Mask_Detection_YOLO/Mask/object.data\
                          /content/Face_Mask_Detection_YOLO/Mask/detect_mask.cfg\
                          /content/backup/detect_mask_last.weights\
-                         /content/gdrive/MyDrive/mask_demo/man_0_1.png
+                         /content/Face_Mask_Detection_YOLO/demo/man_0_1.png
 ```
 
 ## Reference
