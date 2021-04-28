@@ -89,6 +89,25 @@ for this data
                          /content/Face_Mask_Detection_YOLO/demo/man_0_1.png
 ```
 
+### Addition (YOLOv4)
+I've tried YOLOv4 on this dataset. It takes longer than Darknet-53 but there is a chance to improve the performance. You can load this weight with 2000 iteration from [google drive](https://drive.google.com/drive/folders/1aAXDTl5kMPKAHE08WKGP2PifIdc21-ZG).. This pre-trained network distinguishes 0 and 1, but 2 does not seem to distinguish well. (I also tried YOLOv4-tiny, but It doesn't work well. Got only 65.1% mAP)
+
+
+![image](https://user-images.githubusercontent.com/73981982/116477178-37962380-a8b7-11eb-9957-b5b8dc153255.png)
+
+```
+detections_count = 1221, unique_truth_count = 428  
+class_id = 0, name = mask, ap = 97.68%   	 (TP = 328, FP = 24) 
+class_id = 1, name = improperly, ap = 91.54%   	 (TP = 12, FP = 6) 
+class_id = 2, name = no mask, ap = 86.57%   	 (TP = 62, FP = 15) 
+
+for conf_thresh = 0.25, precision = 0.90, recall = 0.94, F1-score = 0.92 
+for conf_thresh = 0.25, TP = 402, FP = 45, FN = 26, average IoU = 71.84 % 
+
+IoU threshold = 50 %, used Area-Under-Curve for each unique Recall 
+mean average precision (mAP@0.50) = 0.919299, or 91.93 % 
+```
+ 
 ## Reference
 - https://arxiv.org/abs/1804.02767
 - https://arxiv.org/abs/1506.02640 
