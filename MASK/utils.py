@@ -324,12 +324,12 @@ def real_time_detection():
 
         # loop through detections and draw them on transparent overlay image
         for label, confidence, bbox in detections:
-        left, top, right, bottom = bbox2points(bbox)
-        left, top, right, bottom = int(left * width_ratio), int(top * height_ratio), int(right * width_ratio), int(bottom * height_ratio)
-        bbox_array = cv2.rectangle(bbox_array, (left, top), (right, bottom), class_colors[label], 2)
-        bbox_array = cv2.putText(bbox_array, "{} [{:.2f}]".format(label, float(confidence)),
-                            (left, top - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
-                            class_colors[label], 2)
+            left, top, right, bottom = bbox2points(bbox)
+            left, top, right, bottom = int(left * width_ratio), int(top * height_ratio), int(right * width_ratio), int(bottom * height_ratio)
+            bbox_array = cv2.rectangle(bbox_array, (left, top), (right, bottom), class_colors[label], 2)
+            bbox_array = cv2.putText(bbox_array, "{} [{:.2f}]".format(label, float(confidence)),
+                                (left, top - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.5,
+                                class_colors[label], 2)
 
         bbox_array[:,:,3] = (bbox_array.max(axis = 2) > 0 ).astype(int) * 255
         # convert overlay of bbox into bytes
