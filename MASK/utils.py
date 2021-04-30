@@ -31,7 +31,6 @@ def download(path):
 def chartShow(path):
   import cv2
   import matplotlib.pyplot as plt
-  %matplotlib inline
 
   image = cv2.imread(path)
   height, width = image.shape[:2]
