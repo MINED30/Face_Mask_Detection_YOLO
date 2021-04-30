@@ -16,6 +16,11 @@
 
 YOLO(You only look once) is one of the fastest object detection algorithms. Although it is no longer the most accurate object detection algorithm, it is recommended that you choose when real-time detection is needed without losing too much accuracy. In this repository, we will try YOLO v3 & v4 and detect facial mask.
 
+## Update : Real-Time Detection on COLAB !
+<img src="https://github.com/MINED30/Face_Mask_Detection_YOLO/blob/main/demo/ezgif-1-4bae3512d57a.gif?raw=true" width="60%">
+
+Now you can try real time face mask detection with this notebookfile! Added codes for realtime detection with your webcam
+
 ## Dataset
 The dataset for this pretrained network is provided by [VictorLin000](https://github.com/VictorLin000/YOLOv3_mask_detect) and contains 678 images of people with and without masks. There are 3 different classes annotated:
 
